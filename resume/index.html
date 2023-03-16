@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="Zn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHIEN's Resume</title>
+    <!--style-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!--(google font)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="box-contents">
+        <div class="contents">
+          <!--contents-->
+          <div class="menubar" id="menubar">
+            <button class="menubtn" id="menubtn">
+              <i id="icon" class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu" id="menu">
+              <a href="#name">Introduction</a>
+              <a href="#work">Experience</a>
+              <a href="#portfolio">Portfolio</a>
+            </div>
+          </div>
+
+          <!--contect-->
+          <div class="user-box" id="user-box">
+            <a href="#" onclick="user()"><i class="fa-solid fa-user"></i></a>
+            <a href="#" onclick="email()"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+            <a href="#" onclick="phone()"
+              ><i class="fa-sharp fa-solid fa-phone"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!--(user)-->
+      <div class="box-user" id="box-user">
+        <div class="contact" id="contact">
+          <h2>About me</h2>
+          <img src="./image/me.jpg" alt="" />
+          <p>22歲，細心、積極、勇於挑戰</p>
+          <p>2年工作經驗</p>
+          <p>
+            工具應用<br />
+            辦公室應用類：Excel｜PowerPoint｜Word<br />
+            多媒體應用類：Canva｜ Adobe ｜Figma<br />
+            作業系統類：Outlook｜Gmail｜Zoom
+          </p>
+          <p>
+            前端網頁設計<br />
+            HTML各項標籤及功能。<br />
+            CSS各項功能美化。<br />
+            Javascript控制HTML各項物件。<br />
+            Media實現RWD。
+          </p>
+          <button class="close" id="close">close</button>
+        </div>
+      </div>
+      <!--(email)-->
+      <div class="box-email" id="box-email">
+        <div class="contact" id="contact">
+          <h2>contact me</h2>
+          <p>ab96319@gmail.com</p>
+          <button class="close1" id="close1">close</button>
+        </div>
+      </div>
+      <!--(phone)-->
+      <div class="box-phone" id="box-phone">
+        <div class="contact" id="contact">
+          <h2>contact me</h2>
+          <p>0985911777</p>
+          <button class="close2" id="close2">close</button>
+        </div>
+      </div>
+    </header>
+
+    <!--(photo)-->
+    <div class="box-photo">
+      <div class="photo">
+        <img src="./image/cartoon.png" alt="" />
+      </div>
+    </div>
+
+    <!--(自我介紹)-->
+    <nav class="box-container">
+      <div class="container">
+        <div id="name">
+          <h2>Hi，我是千綺</h2>
+          <h3>Hi, I'm ChienChi</h3>
+
+          <ul>
+            <li><h4>SCSS/CSS</h4></li>
+            <li><h4>Javascript</h4></li>
+            <li><h4>Vue.js</h4></li>
+            <li><h4>想成為一位前端工程師，自學程式語言中...</h4></li>
+          </ul>
+
+          <h4>
+            對網頁程式很感興趣，累積了一些工作經驗後，決定專注學習程式語言。
+            經過一段時間的自學和實踐後，累積了不少作品集，目前嘗試通過轉職成為一名工程師。
+            除前端開發外，亦透過之前工作經驗，擁有卓越的問題解決能力，能夠快速找出並解決問題。
+          </h4>
+          <!--(工作經驗)-->
+          <div id="work">
+            <h2>2 years works experience</h2>
+            <ul>
+              <li>
+                <h4>人事招募</h4>
+              </li>
+              <li><h4>海報設計</h4></li>
+              <li><h4>網頁程式撰寫</h4></li>
+              <li><h4>學生時期為系上設計發表會邀請卡</h4></li>
+              <li><h4>擔任業務助理期間，為部門設計業績達標慶祝海報</h4></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--(portfolio)-->
+    <nav class="swiper-body" id="swiper-body">
+      <div class="portfolio" id="portfolio">
+        <h2>portfolio</h2>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a
+                href="https://chien-ch.github.io/kentingplay/index.html"
+                target="_blank"
+                ><img src="./image/3.png"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="https://chien-ch.github.io/taiwan.github.io/tai/index.html"
+                target="_blank"
+                ><img src="./image/01.png" alt=""
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="https://chien-ch.github.io/color.github.io/color/index.html"
+                target="_blank"
+                ><img src="./image/2.png"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                href="https://chien-ch.github.io/foodwebsit.github.io/foodweb/index.html#"
+                target="_blank"
+                ><img src="./image/food.png"
+              /></a>
+            </div>
+            <!--
+              <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            -->
+          </div>
+          <br />
+          <br />
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

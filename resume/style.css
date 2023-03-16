@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-contents .contents {
+  background: #fdeddf;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+}
+
+.box-contents .contents .menubar,
+.box-contents .contents .user-box {
+  display: inline-block;
+  margin: 1rem 1.5rem;
+  font-size: 20px;
+}
+
+.box-contents .contents .menubar {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  z-index: 4;
+}
+
+.box-contents .contents .menubar a {
+  text-decoration: none;
+  color: rgb(91, 88, 88);
+  padding: 0.5rem 1rem;
+}
+
+.box-contents .contents .menubar a:hover {
+  color: rgb(129, 123, 123);
+}
+
+.box-contents .contents .menubar button {
+  color: rgb(91, 88, 88);
+  cursor: pointer;
+  border: none;
+  font-size: 25px;
+  display: none;
+  background: #fdeddf;
+}
+
+.box-contents .contents .user-box {
+  float: right;
+}
+
+.box-contents .contents .user-box a {
+  color: rgb(91, 88, 88);
+  padding: 1rem 0.5rem;
+}
+
+.box-user,
+.box-email,
+.box-phone {
+  background: #45455dc4;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: none;
+  z-index: 5;
+}
+
+.box-email .contact,
+.box-phone .contact {
+  background: #e1e2e3cd;
+  width: 300px;
+  height: 350px;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-user .contact {
+  background: #e1e2e3cd;
+  width: 350px;
+  height: 500px;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.box-user .contact img {
+  border-radius: 50%;
+  width: 30%;
+  margin: 0.5rem 0.5rem;
+  float: left;
+  z-index: 3;
+}
+
+.box-user .contact h2,
+.box-email .contact h2,
+.box-phone .contact h2 {
+  text-align: center;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 30px;
+  color: #727597;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box-user .contact p {
+  position: relative;
+  text-align: center;
+  padding: 0.5rem 0rem;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 13px;
+  border: 2px solid #727597;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  z-index: 0;
+}
+
+.box-email .contact p,
+.box-phone .contact p {
+  position: relative;
+  text-align: center;
+  padding: 0.5rem 0.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  border: 2px solid #727597;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.box-user .contact button,
+.box-email .contact button,
+.box-phone .contact button {
+  background: #e1e2e3cd;
+  border: 2px solid #727597;
+  cursor: pointer;
+  padding: 0.5rem 0.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+.photo img {
+  border-radius: 50%;
+  width: 15%;
+  margin: 0.5rem 2rem;
+  float: left;
+  position: fixed;
+}
+
+.box-container {
+  background: #45455d;
+  padding: 2rem;
+}
+
+.box-container .container h2 {
+  margin-top: 2rem;
+}
+
+.box-container .container h3,
+.box-container .container h2 {
+  margin-left: 10rem;
+  padding: 1rem 2rem;
+  color: #fdeddf;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box-container .container ul {
+  border-left: 2px solid #fdeddf;
+  margin-left: 12rem;
+}
+
+.box-container .container li {
+  list-style: none;
+  margin: 1rem 0rem;
+  color: #fdeddf;
+}
+
+.box-container .container h4 {
+  margin: 2rem 2rem;
+  font-size: 17px;
+  color: #fdeddf;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.swiper-body h2 {
+  color: #fdeddf;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem 2rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.swiper-body {
+  height: 100%;
+  background: #45455d;
+  color: #000;
+  padding: 2rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  border: 2.5px solid #c8b9ac;
+  transition: all 0.2s ease;
+}
+
+.swiper-slide img:hover {
+  border: 2.5px solid #727597;
+}
+
+/*(media)*/
+@media (max-width: 850px) {
+  .box-contents .contents .menu-bar {
+    font-size: 18px;
+  }
+
+  .box-contents .contents .menu-bar a {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .box-contents .contents .user-box {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 750px) {
+  #menu {
+    display: none;
+    text-align: center;
+  }
+
+  .box-contents .contents .menubar a {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #c8b9ac;
+    margin-top: 1rem;
+  }
+
+  .box-contents .contents .menubar button {
+    display: block;
+    margin: auto;
+  }
+
+  .box-contents .contents .user-box {
+    margin-top: 0rem;
+    float: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-contents .contents .user-box a {
+    padding: 0rem 1rem;
+    font-size: 20px;
+  }
+
+  .photo img {
+    width: 20%;
+    margin: 2rem 1.5rem;
+  }
+
+  .box-container .container h2 {
+    margin-top: 4.5rem;
+  }
+
+  .box-container .container h3,
+  .box-container .container h2 {
+    margin-left: 8rem;
+    padding: 0.5rem;
+  }
+
+  .box-container .container ul {
+    margin-left: 8.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .photo img {
+    margin-top: 3rem;
+  }
+
+  .box-container .container h2 {
+    margin-top: 4.5rem;
+  }
+
+  .box-container .container h3,
+  .box-container .container h2 {
+    margin-left: 4rem;
+    font-size: 15px;
+  }
+
+  .box-container .container ul {
+    margin-left: 4.5rem;
+  }
+
+  .box-container .container h4 {
+    margin: 1.5rem 1.3rem;
+    font-size: 14px;
+  }
+
+  .swiper-body h2 {
+    font-size: 25px;
+  }
+}
